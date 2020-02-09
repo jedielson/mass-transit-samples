@@ -1,18 +1,43 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - SolutionItens", "0 - SolutionItens", "{9CA6FA6B-E463-4C2E-8960-477C9AAECC9F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{2D59B9D2-3DCB-425E-B249-E649788A61EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jedi.MassTransit.Api", "src\Jedi.MassTransit.Api\Jedi.MassTransit.Api.csproj", "{FA4531F7-014F-456A-AB6C-DF4302550BCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jedi.MassTransit.ServiceBus", "src\Jedi.MassTransit.ServiceBus\Jedi.MassTransit.ServiceBus.csproj", "{AA85A083-1661-419E-B97E-38F0499B67F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA4531F7-014F-456A-AB6C-DF4302550BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4531F7-014F-456A-AB6C-DF4302550BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4531F7-014F-456A-AB6C-DF4302550BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4531F7-014F-456A-AB6C-DF4302550BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA85A083-1661-419E-B97E-38F0499B67F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA85A083-1661-419E-B97E-38F0499B67F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA85A083-1661-419E-B97E-38F0499B67F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA85A083-1661-419E-B97E-38F0499B67F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA4531F7-014F-456A-AB6C-DF4302550BCE} = {2D59B9D2-3DCB-425E-B249-E649788A61EC}
+		{AA85A083-1661-419E-B97E-38F0499B67F7} = {2D59B9D2-3DCB-425E-B249-E649788A61EC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9A4B8E8-B91E-4141-BE86-CA21E646D8E2}
 	EndGlobalSection
 EndGlobal
