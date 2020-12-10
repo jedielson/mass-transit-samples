@@ -39,12 +39,12 @@ namespace Jedi.MassTransit.ServiceBus
                     t.AutoDelete = false;
                 });
 
-                cfg.ReceiveEndpoint("web-service-endpoint", e =>
+                cfg.ReceiveEndpoint("web-service-endpoint",  e =>
                 {
                     e.Durable = true;
                     e.AutoDelete = false;
                     e.AutoStart = true;
-                    e.PrefetchCount = 16;
+                    e.PrefetchCount = 1;
 
                     //e.UseMessageRetry(x => x.Interval(2, 100));                   
 
